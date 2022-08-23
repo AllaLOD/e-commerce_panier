@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#affichage_produits {
+    background-color:  #808000;
+}
+
+#nav_home, footer {
+    background-color: #008080;
+}
+
+.btn_nav {
+    border-color: white;
+    color: white;
+    border-radius: 50px;
+}
+.btn_nav:hover {
+    background-color: white;
+}
+
+#main,.card_profil {
+    background-color: bisque;
+    
+}
+
+.bi {
+    font-size: 1.5em;
+}
+
+.btn_index,.btn_panier {
+    background-color: #808000;
+    color: white;
+    border-radius: 50px;
+
+}
+.btn_contact, .btn_inscription, .btn_connexion {
+    background-color: #008080;
+    color: white;
+    border-radius:50px;
+}
+
+.btn_ajouter, .bi_ajouter {
+    border-color: #008080;
+    color: #008080;
+    border-radius: 50px 50px 50px 50px;   
+}
+
+.lien_panier {
+    color: #008080;
+}
+
+.border_details {
+    color:#008080;
+    border: #008080;
+}
+h1, #profil {
+    font-family: 'Caveat', cursive;
+}
+
+.profil, .connexion, .panier {
+    height: 70vh;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .profil, .connexion, .panier {
+        width: 100%;
+        height: auto;
+    }
+    .table_panier {
+        overflow: auto;
+    }
+}
+
+
+
+

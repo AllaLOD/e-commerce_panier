@@ -1,0 +1,17 @@
+#nav_admin {
+    background-color:#004040 ;
+}
+.bi {
+    font-size: 1.5em;
+}
+
+.btn_admin {
+    color: #004040;
+    font-size: 1.5em;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.btn_admin:hover {
+    background-color: antiquewhite;
+}

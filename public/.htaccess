@@ -1,0 +1,17 @@
+# on démarre le moteur de réécriture
+RewriteEngine On
+
+# On reécri l'URL
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
+
+# https avec www
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTP_HOST} !^www.(.*)$ [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1
+
+
+# On condition les fichiers à telecherger
+RewriteCond %{REQUEST_URI} !\.(png|jpg|jpeg)$
+
+# RewriteRule .*$ - [F]
